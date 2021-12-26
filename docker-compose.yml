@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  sftp-excel-service:
+    image: tugayesilyurt/sftp-excel-service
+    container_name: sftp-excel-service
+    build: 
+       context: ./sftp-excel-service
+       dockerfile: Dockerfile
+    restart: on-failure
+    ports:
+      - "3000:3000"

@@ -1,0 +1,14 @@
+server:
+  port: 3000
+
+spring:
+  application:
+    name: SFTP-EXCEL-SERVICE
+        
+sftp:
+  host: your.sftp.server
+  port: 22
+  username: your.usarname
+  password: your.passowrd
+  sessionTimeout: 15000
+  channelTimeout: 15000
